@@ -26,9 +26,16 @@ export default function Home() {
   return (
     <main className="flex flex-col    ">
       <div className="flex flex-col  gradientBg ">
-        <header className=" flex items-center justify-between p-5 border-b-[1px]  border-[#E8F3F5] ">
+        <header className=" flex items-center justify-between py-5 px-10 border-b-[1px]  border-[#E8F3F5] ">
           <div className="flex justify-start flex-1">
-            <h1 className="font-bold text-white text-2xl">RifatIT.</h1>
+            <Image
+              src="./Logo2.svg"
+              width={200}
+              height={200}
+              className="w-12 md:w-14"
+              alt="Picture of the author"
+            />
+            {/* <h1 className="font-bold text-white text-2xl">RIfaT.</h1> */}
           </div>
 
           <ul className="hidden lg:flex flex-row text-white gap-10">
