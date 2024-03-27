@@ -1,8 +1,15 @@
+"use client";
 import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import React, { useRef } from "react";
 
 export default function Home() {
+  const nextSectionRef = useRef(null);
+  // Event-Handler für den Klick auf den Pfeil
+  const scrollToNextSection = () => {
+    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <main className="flex flex-col    ">
       <div className="flex flex-col  gradientBg ">
@@ -53,6 +60,7 @@ export default function Home() {
           </div>
           <div className="  flex flex-col justify-end items-center absolute bottom-10  ">
             <IoIosArrowDown
+              onClick={scrollToNextSection}
               className="text-white  text-4xl cursor-pointer"
               width={50}
             />
@@ -63,7 +71,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-screen bg-[#202324] gradientBg2r" id="test">
+      <div
+        ref={nextSectionRef}
+        className="h-screen bg-[#202324] gradientBg2r"
+        id="test"
+      >
         <div className="flex flex-col justify-center items-center translate-y-52 gap-5">
           <h4 className="font-normal text-base xl:text-xl text-secondary">
             Was wir machen
