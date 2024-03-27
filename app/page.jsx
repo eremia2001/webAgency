@@ -26,7 +26,7 @@ export default function Home() {
             </button>
           </div>
           <div className=" lg:hidden">
-            <RxHamburgerMenu width={50} className="text-2xl  " />
+            <RxHamburgerMenu width={50} className="text-2xl  text-white " />
           </div>
         </header>
 
@@ -50,7 +50,7 @@ export default function Home() {
             Jetzt kostenlos beraten lassen
           </button>
         </div>
-        <div className="mx-auto  flex flex-col justify-center items-center  mb-10">
+        <div className="mx-auto  flex flex-col justify-center items-center -translate-y-40 mb-10">
           <IoIosArrowDown
             className="text-white  text-4xl cursor-pointer"
             width={50}
