@@ -35,7 +35,7 @@ export default function Home() {
             Webdesign Agentur{" "}
           </h4>
           <div className="flex flex-col gap-1">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl  font-extrabold text-white text-center ">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl  font-extrabold text-white text-center ">
               Verkaufstarke Websites,{" "}
             </h1>
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white text-center ">
@@ -50,7 +50,7 @@ export default function Home() {
             Jetzt kostenlos beraten lassen
           </button>
         </div>
-        <div className="mx-auto  flex flex-col justify-center items-center -translate-y-14">
+        <div className="mx-auto  flex flex-col justify-center items-center  mb-10">
           <IoIosArrowDown
             className="text-white  text-4xl cursor-pointer"
             width={50}
