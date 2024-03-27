@@ -30,23 +30,23 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="flex-1 px-4  flex flex-col justify-center items-center text-center gap-4   font-mulish -translate-y-32 xl:-translate-y-14 ">
+        <div className="flex-1 px-4 sm:px-8  flex flex-col justify-center items-center text-center gap-4   font-mulish -translate-y-32 xl:-translate-y-14 ">
           <h4 className="font-normal text-base xl:text-xl text-secondary">
             Webdesign Agentur{" "}
           </h4>
-          <div className="flex ">
-            <h1 className="text-4xl sm:text-2xl  xl:text-6xl font-extrabold text-white text-center ">
+          <div className="flex flex-col gap-1">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl  font-extrabold text-white text-center ">
               Verkaufstarke Websites,{" "}
             </h1>
-            <h2 className="text-2xl xl:text-5xl font-extrabold text-white text-center ">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white text-center ">
               die ihre Kunden überzeugen
             </h2>
           </div>
-          <p className=" text-subline font-light   text-sm xl:text-xl">
+          <p className=" text-subline font-light   text-sm lg:text-xl">
             Erzielen Sie nachhaltigen Erfolg und gewinnen Sie loyale Kunden mit
             einer innovativen Website von RifatIT
           </p>
-          <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-black ">
+          <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-black xl:text-lg ">
             Jetzt kostenlos beraten lassen
           </button>
         </div>
@@ -64,10 +64,10 @@ export default function Home() {
       <div className="h-screen bg-[#202324] gradientBg2r" id="test">
         <div className="flex flex-col justify-center items-center translate-y-52 gap-5">
           <h4 className="font-normal text-base xl:text-xl text-secondary">
-            Was wir anbieten
+            Webdesign Agentur{" "}
           </h4>
-          <h1 className="text-5xl  xl:text-6xl font-extrabold text-white text-center ">
-            So steigern Sie Ihren Umsatz
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl  font-extrabold text-white text-center ">
+            Verkaufstarke Websites,{" "}
           </h1>
         </div>
       </div>

@@ -35,4 +35,7 @@ body {
 .gradientBg {
   background: linear-gradient(180deg, rgba(29,44,34,1) 0%, rgba(38,58,45,1) 26%, rgba(32,65,43,1) 45%, rgba(29,48,36,1) 65%, rgba(32,37,32,1) 95%, rgba(32,35,36,1) 100%);
 }
+.gradientBg2 {
+  background: linear-gradient(180deg, rgba(32,35,36,1) 30%,  rgba(29,48,36,1) 40%, rgba(32,65,43,1) 49%, rgba(38,58,45,1) 74%, rgba(29,44,34,1) 100%);
+}
 
