@@ -3,12 +3,25 @@ import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const nextSectionRef = useRef(null);
   // Event-Handler für den Klick auf den Pfeil
   const scrollToNextSection = () => {
     nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const bounceVariants = {
+    animate: {
+      y: [0, -10, 0], // Bewegung entlang der Y-Achse: Start, Höhepunkt, Ende
+      scale: [1, 1.2, 1],
+      transition: {
+        duration: 1, // Dauer der Bewegung
+        ease: "easeInOut", // Bewegungsart
+        repeat: Infinity, // Wiederhole die Animation unendlich
+        repeatDelay: 1.5, // Verzögerung zwischen den Wiederholungen
+      },
+    },
   };
   return (
     <main className="flex flex-col    ">
@@ -43,7 +56,7 @@ export default function Home() {
               Webdesign Agentur{" "}
             </h4>
             <div className="flex flex-col gap-1">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl  font-extrabold text-white text-center ">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl    font-extrabold text-white text-center ">
                 Verkaufstarke Websites,{" "}
               </h1>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white text-center ">
@@ -59,11 +72,17 @@ export default function Home() {
             </button>
           </div>
           <div className="  flex flex-col justify-end items-center absolute bottom-10  ">
-            <IoIosArrowDown
+            <motion.div
               onClick={scrollToNextSection}
-              className="text-white  text-4xl cursor-pointer"
-              width={50}
-            />
+              className="cursor-pointer"
+              variants={bounceVariants}
+              animate="animate"
+            >
+              <IoIosArrowDown
+                className="text-white text-4xl"
+                style={{ fontSize: "50px" }}
+              />
+            </motion.div>
             <p className="text-subline text-sm">
               Erfahren Sie mit uns Ihren Umsatz steigern können
             </p>
