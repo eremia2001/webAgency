@@ -80,7 +80,7 @@ export default function Home() {
             >
               <IoIosArrowDown
                 className="text-white text-4xl"
-                style={{ fontSize: "50px" }}
+                style={{ fontSize: "40px" }}
               />
             </motion.div>
             <p className="text-subline text-sm">
