@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="flex flex-col mx-auto md:flex-row  justify-center items-center  mt-44 gap-24 md:gap-10  ">
+        <div className="flex flex-col mx-auto md:flex-row  justify-center items-center  mt-44 gap-24 text-white md:gap-10  ">
           <SalesComponent />
           <SalesComponent />
           <SalesComponent />
