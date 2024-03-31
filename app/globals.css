@@ -39,3 +39,22 @@ body {
   background: linear-gradient(180deg, rgba(32,35,36,1) 30%,  rgba(29,48,36,1) 40%, rgba(32,65,43,1) 49%, rgba(38,58,45,1) 74%, rgba(29,44,34,1) 100%);
 }
 
+/* gradientBorder.css */
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px; /* Slightly larger than the border to cover the container edge */
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(28deg, rgba(111, 111, 111, 0.1), rgba(255, 255, 255, 0.5) 50%, rgba(145, 145, 145, 0.05));
+  z-index: -1;
+  border-radius: inherit; /* To match the container's border-radius */
+  box-sizing: border-box;
+}
+
+.gradient-border {
+  
+  position: relative; /* Required for absolute positioning of ::before */
+}
+
