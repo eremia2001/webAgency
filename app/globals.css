@@ -38,23 +38,34 @@ body {
 .gradientBg2 {
   background: linear-gradient(180deg, rgba(32,35,36,1) 30%,  rgba(29,48,36,1) 40%, rgba(32,65,43,1) 49%, rgba(38,58,45,1) 74%, rgba(29,44,34,1) 100%);
 }
-
-/* gradientBorder.css */
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  top: -2px; /* Slightly larger than the border to cover the container edge */
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(28deg, rgba(111, 111, 111, 0.1), rgba(255, 255, 255, 0.5) 50%, rgba(145, 145, 145, 0.05));
-  z-index: -1;
-  border-radius: inherit; /* To match the container's border-radius */
-  box-sizing: border-box;
-}
-
+/* Parent element needs to be positioned relatively */
+/* Füge dies zu deinen globalen Stilen hinzu */
+/* Entferne das ::before Pseudo-Element und seine Stile, da es nicht benötigt wird. */
+/* Die Grundklasse für das Element */
+/* Die Grundklasse für das Element */
+/* gradient-border.css */
+/* gradient-border.css */
 .gradient-border {
-  
-  position: relative; /* Required for absolute positioning of ::before */
+  /* Stelle sicher, dass der Container relativ positioniert ist */
+  position: relative;
+  /* Füge Abstand im Inneren hinzu, um den Rahmen zu simulieren */
+  /* Der Trick besteht darin, einen Hintergrundgradienten zu erstellen */
+  background: linear-gradient(45deg, rgba(111, 111, 111, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(145, 145, 145, 0.05) 100%);
+  z-index: 0;
+  /* Verwende ein pseudo-Element, um den eigentlichen Inhalt zu bedecken */
 }
 
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Hier setzen wir den Hintergrund des Inhaltsbereichs transparent */
+  z-index: -1;
+  /* Abstand zum Rand, um den Gradientenrand zu zeigen */
+  background-image: linear-gradient(to bottom, #333333, #202324);
+  margin: 4px;
+  overflow: hidden;
+}

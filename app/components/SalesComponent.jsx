@@ -1,20 +1,20 @@
 import React from "react";
 import Image from "next/image";
 
-const SalesComponent = () => {
+const SalesComponent = ({ imageSrc, title, description }) => {
   return (
-    <div className="flex flex-wrap flex-col py-10 px-2 gap-10 items-center text-center max-w-[350px] w-full  min-h-[600px] rounded-xl bg-gradient-to-b from-[#333333] to-[#202324] ">
-      <h1 className="font-bold text-3xl ">1. Radar</h1>
-      <p className="font-medium">
-        Mit erstklassigem SEO machen wir Ihre Website zum Leuchtturm für
-        Suchende.
-      </p>
-      <Image
-        src="/radar.svg"
-        width={200}
-        height={200}
-        className="translate-y-9"
-      />
+    <div className="relative gradient-border flex flex-wrap flex-col py-10 px-2 gap-10 items-center text-center max-w-[350px] w-full  min-h-[600px] rounded-xl ">
+      <h1 className="font-bold text-3xl md:text-2xl lg:text-3xl">{title}</h1>
+      <p className="font-semibold">{description}</p>
+      <div className="absolute top-1/2 w-32 h-32">
+        <Image
+          src={imageSrc}
+          className=" w-full"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
     </div>
   );
 };

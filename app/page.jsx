@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import SalesComponent from "./components/SalesComponent";
+import GradientBorderComponent from "./components/GradientBorderComponent";
 
 export default function Home() {
   const nextSectionRef = useRef(null);
@@ -21,7 +22,7 @@ export default function Home() {
 
       <div
         ref={nextSectionRef}
-        className="-500 min-h-screen bg-[#202324]    "
+        className="-500 min-h-screen bg-[#202324]   "
         id="test"
       >
         <div className="flex flex-col justify-center items-center gap-5">
@@ -33,10 +34,22 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="flex flex-col mx-auto lg:flex-row  justify-center items-center  mt-44 gap-24 text-white md:gap-10  ">
-          <SalesComponent />
-          <SalesComponent />
-          <SalesComponent />
+        <div className="flex flex-col mx-auto md:flex-row  max-w-[1080px]  justify-center items-center  mt-44 gap-52 md:gap-12 text-white ">
+          <SalesComponent
+            imageSrc="/radar.svg"
+            title="1. Radar"
+            description="Mit erstklassigem SEO machen wir Ihre Website zum Leuchtturm für Suchende."
+          />
+          <SalesComponent
+            imageSrc="/siegel.svg"
+            title="2. Überzeugung"
+            description="Ihre Professionalität glänzt – Besucher werden sofort von Ihrer Expertise angezogen"
+          />
+          <SalesComponent
+            imageSrc="/euro.svg"
+            title="3. Kunden gewinnen"
+            description="Aus Interessenten werden Kunden, fasziniert von Ihrer Präsenz und dem Wert Ihrer Dienstleistungen."
+          />
         </div>
       </div>
     </main>
