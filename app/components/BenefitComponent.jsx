@@ -10,7 +10,7 @@ const BenefitComponent = ({ title, description, icon }) => {
       <h1 className="font-bold text-xl my-5">{title}</h1>
 
       {/* Dynamisch die Beschreibung setzen */}
-      <p>{description}</p>
+      <p className="text-[#d8d8d8]">{description}</p>
     </div>
   );
 };
