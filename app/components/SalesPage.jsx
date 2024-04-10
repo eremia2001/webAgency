@@ -4,7 +4,7 @@ import SalesComponent from "./SalesComponent";
 import Title from "./Title";
 const SalesPage = () => {
   return (
-    <div className=" min-h-screen bg-[#202324]   " id="test">
+    <div className="  bg-[#202324]   " id="test">
       <Title title="Wie wir Ihren Umsatz steigern" />
       <div className="  mt-44  text-white px-10 ">
         <div className="flex flex-wrap flex-col mx-auto md:flex-row  max-w-[1440px]  md:gap-10 gap-52 justify-center items-center ">
