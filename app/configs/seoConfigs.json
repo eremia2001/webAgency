@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "heroSection": {
+      "pageTitle": "Webdesign Agentur - Verkaufstarke Websites",
+      "description": "Erzielen Sie nachhaltigen Erfolg und gewinnen Sie loyale Kunden mit einer innovativen Website von RifatIT. Entdecken Sie, wie wir Ihren Umsatz steigern können.",
+      "buttons": [
+        "Jetzt kostenlos beraten lassen"
+      ],
+      "highlights": [
+        "Verkaufstarke Websites",
+        "die ihre Kunden überzeugen"
+      ]
+    },
+    "salesPage": {
+      "pageTitle": "Wie wir Ihren Umsatz steigern",
+      "description": "So steigern Sie Ihren Umsatz mit erstklassigem SEO und überzeugender Professionalität. Entdecken Sie, wie aus Interessenten Kunden werden.",
+      "steps": [
+        {
+          "title": "1. Radar",
+          "description": "Mit erstklassigemMit erklassigem Seo machen wir Ihre Webseite  SEO machen wir Ihre Website zum Leuchtturm für Suchende."
+        },
+        {
+          "title": "2. Überzeugung",
+          "description": "Ihre Professionalität glänzt – Besucher werden sofort von Ihrer Expertise angezogen."
+        },
+        {
+          "title": "3. Kunden gewinnen",
+          "description": "Aus Interessenten werden Kunden, fasziniert von Ihrer Präsenz und dem Wert Ihrer Dienstleistungen."
+        }
+      ]
+    }
+  }
+}

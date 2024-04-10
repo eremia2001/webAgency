@@ -50,7 +50,7 @@ body {
   position: relative;
   /* Füge Abstand im Inneren hinzu, um den Rahmen zu simulieren */
   /* Der Trick besteht darin, einen Hintergrundgradienten zu erstellen */
-  background: linear-gradient(83deg, rgba(111, 111, 111, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(145, 145, 145, 0.05) 100%);
+  background: linear-gradient(75deg, rgba(111, 111, 111, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(145, 145, 145, 0.05) 100%);
   z-index: 0;
   border-radius: 16px;
   /* Verwende ein pseudo-Element, um den eigentlichen Inhalt zu bedecken */
@@ -67,7 +67,7 @@ body {
   z-index: -1;
   /* Abstand zum Rand, um den Gradientenrand zu zeigen */
   background-image: linear-gradient(to bottom, #2e2e2e, #202324);
-  margin: 0.4px;
+  margin: 1px;
   overflow: hidden;
   border-radius: inherit;
 

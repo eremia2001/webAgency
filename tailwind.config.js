@@ -13,12 +13,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'mulish': ['Mulish', 'sans-serif'],
+        mulish: ["Mulish", "sans-serif"],
       },
       colors: {
-        primary: '#00A65F',
-        secondary: '#00A65F', // Du hast hier denselben Wert wie für primary angegeben. Wenn das beabsichtigt ist, ist es okay. Wenn nicht, musst du den korrekten Wert für secondary einfügen.
-        subline: '#9DB0A3',
+        primary: "#00A65F",
+        secondary: "#00A65F", // Du hast hier denselben Wert wie für primary angegeben. Wenn das beabsichtigt ist, ist es okay. Wenn nicht, musst du den korrekten Wert für secondary einfügen.
+        subline: "#9DB0A3",
+      },
+      gridTemplateColumns: {
+        // Definiere hier deine eigenen benutzerdefinierten Grid-Layouts
+        fluid: "repeat(auto-fill, minmax(350px, 1fr))", // Beispiel für ein fluides Layout, passt die Spaltenanzahl basierend auf der Mindestbreite der Spalte an
       },
     },
   },
