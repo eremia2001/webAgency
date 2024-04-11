@@ -40,13 +40,17 @@ const Footer = () => {
               (item, index) => {
                 return currentPath == "/" ? (
                   <li key={index} className="cursor-pointer">
-                    <ScrollLink
-                      to={item == "Kontakt" ? "contact" : item.toLowerCase()}
-                      smooth={true}
-                      duration={800}
-                    >
-                      {item}
-                    </ScrollLink>
+                    {item == "Kontakt" ? (
+                      <Link href="/Kontakt"> {item}</Link>
+                    ) : (
+                      <ScrollLink
+                        to={item.toLowerCase()}
+                        smooth={true}
+                        duration={800}
+                      >
+                        {item}
+                      </ScrollLink>
+                    )}
                   </li>
                 ) : (
                   <li key={index} className="cursor-pointer">

@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link as ScrollLink } from "react-scroll";
+import Button from "./Button";
 
 const HeroSection = () => {
   const nextSectionRef = useRef(null);
@@ -40,9 +41,7 @@ const HeroSection = () => {
           Erzielen Sie nachhaltigen Erfolg und gewinnen Sie loyale Kunden mit
           einer innovativen Website von RifatIT
         </p>
-        <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-white xl:text-lg shadow-2xl shadow-green-700 ">
-          Jetzt kostenlos beraten lassen
-        </button>
+        <Button title="Jetzt kostenlos beraten lassen" />
       </div>
       <div className="  flex flex-col justify-end items-center absolute bottom-10  ">
         <ScrollLink to="angebot" smooth={true} duration={800}>

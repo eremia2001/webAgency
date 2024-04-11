@@ -14,6 +14,7 @@ import ProcessPage from "./components/ProcessPage";
 import FaqPage from "./components/FaqPage";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Home() {
   return (

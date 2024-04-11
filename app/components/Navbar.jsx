@@ -35,20 +35,33 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-start flex-1">
-        <ScrollLink
-          to="home"
-          smooth={true}
-          duration={800}
-          className="cursor-pointer"
-        >
-          <Image
-            src="/Logo2.svg" // Stelle sicher, dass der Pfad zu deinem Logo korrekt ist
-            width={200}
-            height={200}
-            className="w-12 md:w-14"
-            alt="Logo"
-          />
-        </ScrollLink>
+        {currentPath == "/" ? (
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={800}
+            className="cursor-pointer"
+          >
+            <Image
+              src="/Logo2.svg" // Stelle sicher, dass der Pfad zu deinem Logo korrekt ist
+              width={200}
+              height={200}
+              className="w-12 md:w-14"
+              alt="Logo"
+            />
+          </ScrollLink>
+        ) : (
+          <Link href="/">
+            {" "}
+            <Image
+              src="/Logo2.svg" // Stelle sicher, dass der Pfad zu deinem Logo korrekt ist
+              width={200}
+              height={200}
+              className="w-12 md:w-14"
+              alt="Logo"
+            />
+          </Link>
+        )}
       </div>
 
       <ul className="hidden lg:flex flex-row text-white gap-10">
