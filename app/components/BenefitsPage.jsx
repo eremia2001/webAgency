@@ -7,7 +7,10 @@ import benefits from "../configs/benefitsConfig"; // Importiere die Config
 
 const BenefitsPage = () => {
   return (
-    <div className="min-h-screen bg-[#202324] flex flex-col pt-40 lg:mt-0 text-white  px-10 ">
+    <div
+      className="min-h-screen bg-[#202324] flex flex-col pt-40 lg:mt-0 text-white  px-10 "
+      id="service"
+    >
       <div className=" ">
         <TitleColored
           title="Das bekommen Sie mit"

@@ -7,7 +7,7 @@ const ProcessPage = () => {
   return (
     <div
       className="bg-[#202324] pt-56 flex flex-col justify-center items-center px-10 "
-      id="process"
+      id="prozess"
     >
       <Title
         title="In 4 Schritten zu Deinem Online Erfolg"

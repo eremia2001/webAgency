@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="flex flex-col gap-5 mx-auto text-center">
         <h1 className="text-xl mt-6  font-semibold  ">Nützliche Links</h1>
         <ul className="flex flex-col gap-2">
-          {["Angebot", "Service", "Unser Prozess", "FAQ", "Kontakt"].map(
+          {["Angebot", "Service", "Prozess", "FAQ", "Kontakt"].map(
             (item, index) => {
               return currentPath == "/" ? (
                 <li key={index} className="cursor-pointer">

@@ -3,9 +3,9 @@ import faqs from "../configs/fuqConfigs"; // Pfad zur config.js anpassen
 import FuqComponent from "./FuqComponent"; // Pfad zur FuqComponent.js anpassen
 import Title from "./Title";
 
-const FuqPage = () => {
+const FaqPage = () => {
   return (
-    <div className="px-10 bg-[#202324] pt-96">
+    <div className="px-10 bg-[#202324] mt-96" id="faq">
       <Title
         title="Fragen ? Wir haben Antworten!"
         subtitle="Verstehen. Handeln. Wachsen."
@@ -26,4 +26,4 @@ const FuqPage = () => {
   );
 };
 
-export default FuqPage;
+export default FaqPage;
