@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const ReminderComponent = () => {
   return (
@@ -12,12 +13,8 @@ const ReminderComponent = () => {
             Jetzt nach einer kostenlosen Beratung herausfinden , wie wir helfen
             können !
           </h1>
-          <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-black ">
-            <div className="flex flex-row items-center justify-center">
-              <p>Zur Anfrage</p>
-              <p className="font-light text-gray-800">- 1 Minute</p>
-            </div>
-          </button>
+
+          <Button title="Zur Anfrage " />
         </div>
       </div>
     </div>

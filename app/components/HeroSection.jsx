@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link as ScrollLink } from "react-scroll";
 
 const HeroSection = () => {
   const nextSectionRef = useRef(null);
@@ -39,22 +40,24 @@ const HeroSection = () => {
           Erzielen Sie nachhaltigen Erfolg und gewinnen Sie loyale Kunden mit
           einer innovativen Website von RifatIT
         </p>
-        <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-black xl:text-lg shadow-2xl shadow-green-700 ">
+        <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-white xl:text-lg shadow-2xl shadow-green-700 ">
           Jetzt kostenlos beraten lassen
         </button>
       </div>
       <div className="  flex flex-col justify-end items-center absolute bottom-10  ">
-        <motion.div
-          onClick={scrollToNextSection}
-          className="cursor-pointer"
-          variants={bounceVariants}
-          animate="animate"
-        >
-          <IoIosArrowDown
-            className="text-white text-4xl"
-            style={{ fontSize: "40px" }}
-          />
-        </motion.div>
+        <ScrollLink to="angebot" smooth={true} duration={800}>
+          <motion.div
+            onClick={scrollToNextSection}
+            className="cursor-pointer"
+            variants={bounceVariants}
+            animate="animate"
+          >
+            <IoIosArrowDown
+              className="text-white text-4xl"
+              style={{ fontSize: "40px" }}
+            />
+          </motion.div>
+        </ScrollLink>
         <p className="text-subline text-sm">
           Erfahren Sie mit uns Ihren Umsatz steigern können
         </p>

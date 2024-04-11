@@ -1,36 +1,78 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Button from "./Button";
+
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const currentPath = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Event Listener hinzufügen
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup-Funktion, um den Event Listener zu entfernen
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className=" flex items-center justify-between py-5 px-10 border-b-[1px]  border-[#E8F3F5] ">
+    <header
+      className={`flex items-center justify-between py-5 px-10 border-b-[1px] border-[#E8F3F5] ${
+        isScrolled
+          ? "fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm  z-50"
+          : "relative"
+      }`}
+    >
       <div className="flex justify-start flex-1">
-        <Image
-          src="./Logo2.svg"
-          width={200}
-          height={200}
-          className="w-12 md:w-14"
-          alt="Picture of the author"
-        />
-        {/* <h1 className="font-bold text-white text-2xl">RIfaT.</h1> */}
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={800}
+          className="cursor-pointer"
+        >
+          <Image
+            src="/Logo2.svg" // Stelle sicher, dass der Pfad zu deinem Logo korrekt ist
+            width={200}
+            height={200}
+            className="w-12 md:w-14"
+            alt="Logo"
+          />
+        </ScrollLink>
       </div>
 
       <ul className="hidden lg:flex flex-row text-white gap-10">
-        <li>Referenzen</li>
-        <li>Blog</li>
-        <li>Warum wir ?</li>
+        {["Angebot", "Service", "Prozess", "FAQ"].map((item, index) => {
+          return currentPath == "/" ? (
+            <li key={index} className="cursor-pointer">
+              <ScrollLink to={item.toLowerCase()} smooth={true} duration={800}>
+                {item}
+              </ScrollLink>
+            </li>
+          ) : (
+            <li key={index} className="cursor-pointer">
+              <Link href={`/#${item.toLowerCase()}`}>{item}</Link>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="hidden justify-end flex-1 lg:flex">
-        <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-black ">
-          <div className="flex flex-row items-center justify-center">
-            <p>Zur Anfrage</p>
-            <p className="font-light text-gray-800">- 1 Minute</p>
-          </div>
-        </button>
+        <Button title="zur Anfrage" />
       </div>
-      <div className=" lg:hidden">
-        <RxHamburgerMenu width={50} className="text-2xl  text-white " />
+
+      <div className="lg:hidden">
+        <RxHamburgerMenu className="text-2xl text-white" />
       </div>
     </header>
   );

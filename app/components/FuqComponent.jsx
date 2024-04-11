@@ -19,7 +19,9 @@ const FuqComponent = ({ question, answer }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-row justify-between items-center">
-        <h1 className="font-semibold text-lg sm:text-xl ">{question}</h1>
+        <h1 className="font-semibold text-lg sm:text-xl text-white ">
+          {question}
+        </h1>
         <motion.div
           animate={isOpen ? "open" : "closed"}
           variants={arrowVariants}
