@@ -27,7 +27,10 @@ const FuqComponent = ({ question, answer }) => {
           variants={arrowVariants}
           transition={{ duration: 0.3 }}
         >
-          <MdKeyboardArrowDown size={30} className="cursor-pointer" />
+          <MdKeyboardArrowDown
+            size={30}
+            className="cursor-pointer text-white"
+          />
         </motion.div>
       </div>
       <motion.div

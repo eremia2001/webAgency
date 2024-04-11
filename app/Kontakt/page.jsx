@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Kontakt = () => {
   return (
-    <div className="bg-[#202324] min-h-screen flex flex-col">
+    <div className="bg-[#202324] min-h-screen flex flex-col text-white">
       <Navbar />
       <ToastContainer />
 
