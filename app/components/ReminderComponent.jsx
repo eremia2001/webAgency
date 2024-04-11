@@ -2,7 +2,7 @@ import React from "react";
 
 const ReminderComponent = () => {
   return (
-    <div className="bg-[#202324] flex justify-center  pt-56 md:py-56">
+    <div className="bg-[#202324] flex justify-center  py-32 px-10">
       <div className="max-w-[1080px] bg-[#1D2C22] p-20 rounded-2xl shadow-xl">
         <div className="flex flex-col justify-center items-center gap-10 ">
           <h4 className="font-normal text-base xl:text-xl text-secondary">

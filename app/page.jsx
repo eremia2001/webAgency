@@ -10,8 +10,9 @@ import GradientBorderComponent from "./components/GradientBorderComponent";
 import { motion } from "framer-motion";
 import Title from "./components/Title";
 import ReminderComponent from "./components/ReminderComponent";
-import ProcessStep from "./components/ProcessStep";
-import processSteps from "./configs/processStepConfig";
+import ProcessPage from "./components/ProcessPage";
+import FuqPage from "./components/FuqPage";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,29 +23,26 @@ export default function Home() {
       </div>
       <SalesPage />
 
-      <ReminderComponent />
-
+      <div className="flex flex-col justify-center items-center gap-5 bg-[#202324] py-96 px-10">
+        <h4 className="font-normal text-base xl:text-xl text-secondary">
+          Worauf Warten Sie ?
+        </h4>
+        <h1 className="text-3xl sm:text-3xl lg:text-3xl  font-extrabold text-white text-center ">
+          Zeit Ihre Online Präsenz zu meistern!
+        </h1>
+        <button className="px-5 py-2 rounded-md font-bold bg-primary w-fit text-white ">
+          <p>Jetzt Termin vereinbaren </p>
+        </button>
+      </div>
       <BenefitsPage />
 
-      <div className="bg-[#202324] pt-56 flex flex-col justify-center items-center px-10 ">
-        <Title
-          title="In 4 Schritten zu Deinem Online Erfolg"
-          subtitle="Unser Prozess"
-        />
+      <ProcessPage />
 
-        <div className="flex-1 max-w-[1080px] mt-56 flex flex-col xl:gap-56 gap-40 px-10">
-          {processSteps.map((step, index) => (
-            <ProcessStep
-              key={index}
-              title={step.title}
-              description={step.description}
-              imageSource={step.imageSource}
-            />
-          ))}
-        </div>
-      </div>
+      <FuqPage />
 
-      <div></div>
+      <ReminderComponent />
+
+      <Footer />
     </main>
   );
 }
