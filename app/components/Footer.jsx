@@ -98,7 +98,7 @@ const Footer = () => {
               <p className="font-semibold">
                 Telefon : <span className="font-light">0176/2893 1829</span>
               </p>
-              <div className="flex flex-row items-center gap-2 mx-auto">
+              {/* <div className="flex flex-row items-center gap-2 mx-auto">
                 <FaLinkedin className="text-3xl" width={2000} />
 
                 <p>moouv</p>
@@ -106,7 +106,7 @@ const Footer = () => {
               <div className="flex flex-row items-center gap-2 mx-auto translate-x-2 ">
                 <FaInstagram className="text-white text-3xl" width={200} />
                 <p>@moouv</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

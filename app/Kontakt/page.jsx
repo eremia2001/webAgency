@@ -11,7 +11,7 @@ const Kontakt = () => {
       <Navbar />
       <ToastContainer />
 
-      <div className="flex flex-col mt-32 mx-auto max-w-[1080px] px-10 pb-24">
+      <div className="flex flex-col mt-32 mx-auto max-w-[1080px] px-5 pb-24">
         <div className="flex flex-col justify-center items-center gap-5">
           <Title
             title="Bereit für den nächsten Schritt ?"
