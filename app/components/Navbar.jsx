@@ -121,11 +121,17 @@ const Navbar = () => {
                       to={item.toLowerCase()}
                       smooth={true}
                       duration={800}
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       {item}
                     </ScrollLink>
                   ) : (
-                    <Link href={`/#${item.toLowerCase()}`}>{item}</Link>
+                    <Link
+                      href={`/#${item.toLowerCase()}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item}
+                    </Link>
                   )}
                 </li>
               ))}{" "}
