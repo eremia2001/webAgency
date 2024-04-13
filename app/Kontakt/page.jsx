@@ -7,11 +7,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Kontakt = () => {
   return (
-    <div className="bg-[#202324] min-h-screen flex flex-col text-white relative">
+    <div className="bg-[#202324] min-h-screen flex flex-col text-white relative ">
       <Navbar />
       <ToastContainer />
 
-      <div className="flex flex-col mt-32 mx-auto max-w-[1080px] px-5 pb-24">
+      <div className="flex flex-col mt-52 mx-auto max-w-[1080px] px-5 pb-24">
         <div className="flex flex-col justify-center items-center gap-5">
           <Title
             title="Bereit für den nächsten Schritt ?"

@@ -24,8 +24,8 @@ const HeroSection = () => {
     },
   };
   return (
-    <div className=" flex flex-col justify-center items-center h-screen">
-      <div className=" relative  px-4 sm:px-8  flex flex-col justify-center items-center text-center gap-4   font-mulish -translate-y-32 xl:-translate-y-40 ">
+    <div className=" flex flex-col justify-center items-center h-screen  ">
+      <div className=" relative  px-4 sm:px-8  flex flex-col justify-center items-center text-center gap-4   font-mulish -translate-y-6 xl:-translate-y-10 ">
         <h4 className="font-normal text-base xl:text-xl text-secondary">
           Webdesign Agentur{" "}
         </h4>
