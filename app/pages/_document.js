@@ -7,6 +7,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* Preload Mulish font */}
+          <link rel="icon" href="../favicon.ico" />
           <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap"

@@ -93,10 +93,10 @@ const Footer = () => {
             </h1>
             <div className="flex flex-col h-full justify-evenly gap-5 ">
               <p className="font-semibold">
-                Email : <span className="font-light">moouv@web.de</span>
+                Email : <span className="font-light">info@rifatdesigns.de</span>
               </p>
               <p className="font-semibold">
-                Telefon : <span className="font-light">0176/2893 1829</span>
+                Telefon : <span className="font-light">0176/247 44598</span>
               </p>
               {/* <div className="flex flex-row items-center gap-2 mx-auto">
                 <FaLinkedin className="text-3xl" width={2000} />
