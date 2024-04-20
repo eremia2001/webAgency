@@ -19,6 +19,9 @@ import { ToastContainer, toast } from "react-toastify";
 export default function Home() {
   return (
     <main className="bg-[#202324]  ">
+      <title>
+        RifatIT Web Development | Professionelles Webdesign in Halle (Saale)
+      </title>
       <div className="flex flex-col">
         <div className="flex flex-col  gradientBg  " id="home">
           <Navbar />
